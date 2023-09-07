@@ -4,9 +4,14 @@
 \alias{visualizeFeature}
 \title{Visualize Longitudinal Feature}
 \usage{
-visualizeFeature(se_object = NULL, text = "featureName",
-  unit = "days", ylabel = "Normalized Count", col = c("blue",
-  "firebrick"), prefix = "Test")
+visualizeFeature(
+  se_object = NULL,
+  text = "featureName",
+  unit = "days",
+  ylabel = "Normalized Count",
+  col = c("blue", "firebrick"),
+  prefix = "Test"
+)
 }
 \arguments{
 \item{se_object}{SummarizedExperiment object contains omics count/level matrix 

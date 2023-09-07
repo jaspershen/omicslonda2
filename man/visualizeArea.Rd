@@ -4,9 +4,15 @@
 \alias{visualizeArea}
 \title{Visualize significant time interval}
 \usage{
-visualizeArea(omicslonda_object = NULL, fit.method = "ssgaussian",
-  text = "FeatureName", unit = "days", ylabel = "Normalized Count",
-  col = c("blue", "firebrick"), prefix = "Test")
+visualizeArea(
+  omicslonda_object = NULL,
+  fit.method = "ssgaussian",
+  text = "FeatureName",
+  unit = "days",
+  ylabel = "Normalized Count",
+  col = c("blue", "firebrick"),
+  prefix = "Test"
+)
 }
 \arguments{
 \item{omicslonda_object}{The returned object from omicslonda analysis}

@@ -4,14 +4,23 @@
 \alias{omicslonda}
 \title{Omics Longitudinal Differential Analysis for one feature}
 \usage{
-omicslonda(se_object = NULL, n.perm = 500, fit.method = "ssgaussian",
-  points = NULL, text = "FeatureName", parall = FALSE,
-  pvalue.threshold = 0.05, adjust.method = "BH", time.unit = "days",
-  ylabel = "Normalized Count", col = c("blue", "firebrick"),
-  prefix = "Test")
+omicslonda(
+  se_object = NULL,
+  n.perm = 500,
+  fit.method = "ssgaussian",
+  points = NULL,
+  text = "FeatureName",
+  parall = FALSE,
+  pvalue.threshold = 0.05,
+  adjust.method = "BH",
+  time.unit = "days",
+  ylabel = "Normalized Count",
+  col = c("blue", "firebrick"),
+  prefix = "Test"
+)
 }
 \arguments{
-\item{se_object}{SummarizedExperiment object contains omics count/level matrix 
+\item{se_object}{SummarizedExperiment object contains omics count/level matrix
 and  metadata contains (subject, time, group, and any any other covariates)}
 
 \item{n.perm}{number of permutations.}
@@ -41,7 +50,7 @@ months, etc.)}
 }
 \value{
 a list of the significant time intervals for the tested
-feature, fitted model for each group, null distribution of the test statistic 
+feature, fitted model for each group, null distribution of the test statistic
 of the tested feature, and the original input data.
 }
 \description{
@@ -56,7 +65,7 @@ omicslonda_test_object = omicslonda_se_object_adjusted[1,]
 points = seq(1, 500, length.out = 500)
 res = omicslonda(se_object = omicslonda_test_object, n.perm = 10,
                  fit.method = "ssgaussian", points = points, text = "Feature_1",
-                 parall = FALSE, pvalue.threshold = 0.05, 
+                 parall = FALSE, pvalue.threshold = 0.05,
                  adjust.method = "BH", time.unit = "days",
                  ylabel = "Normalized Count",
                  col = c("blue", "firebrick"), prefix = tempfile())

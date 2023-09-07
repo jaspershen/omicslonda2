@@ -4,8 +4,12 @@
 \alias{curveFitting}
 \title{Fit longitudinal data}
 \usage{
-curveFitting(formula = Count ~ Time, df = "NULL",
-  fit.method = "ssgaussian", points = NULL)
+curveFitting(
+  formula = Count ~ Time,
+  df = "NULL",
+  fit.method = "ssgaussian",
+  points = NULL
+)
 }
 \arguments{
 \item{formula}{formula to be passed to the regression model}

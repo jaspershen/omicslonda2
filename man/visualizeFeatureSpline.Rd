@@ -4,10 +4,16 @@
 \alias{visualizeFeatureSpline}
 \title{Visualize the feature trajectory with the fitted Splines}
 \usage{
-visualizeFeatureSpline(se_object = NULL, omicslonda_object = NULL,
-  fit.method = "ssgaussian", text = "FeatureName", unit = "days",
-  ylabel = "Normalized Count", col = c("blue", "firebrick"),
-  prefix = "Test")
+visualizeFeatureSpline(
+  se_object = NULL,
+  omicslonda_object = NULL,
+  fit.method = "ssgaussian",
+  text = "FeatureName",
+  unit = "days",
+  ylabel = "Normalized Count",
+  col = c("blue", "firebrick"),
+  prefix = "Test"
+)
 }
 \arguments{
 \item{se_object}{SummarizedExperiment object contains omics count/level matrix 

@@ -4,8 +4,12 @@
 \alias{visualizeTestStatHistogram}
 \title{Visualize test statistics empirical distribution}
 \usage{
-visualizeTestStatHistogram(omicslonda_object = NULL,
-  text = "FeatureName", fit.method = "ssgaussian", prefix = "Test")
+visualizeTestStatHistogram(
+  omicslonda_object = NULL,
+  text = "FeatureName",
+  fit.method = "ssgaussian",
+  prefix = "Test"
+)
 }
 \arguments{
 \item{omicslonda_object}{The returned object from omicslonda analysis}
