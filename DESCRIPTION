@@ -1,0 +1,48 @@
+Package: OmicsLonDA
+Type: Package
+Title: Omics Longitudinal Differential Analysis
+Version: 1.3.4
+Date: 2019-12-19
+Author: Ahmed A. Metwally, Tom Zhang, Michael Snyder
+Maintainer: Ahmed A. Metwally <ametwall@stanford.edu>
+URL: https://github.com/aametwally/OmicsLonDA
+BugReports: https://github.com/aametwally/OmicsLonDA/issues
+Description: Statistical method that provides robust identification of time intervals where omics features (such as proteomics, lipidomics, metabolomics, transcriptomics, microbiome, as well as physiological parameters captured by wearable sensors such as heart rhythm, body temperature, and activity level) are significantly different between groups.
+License: MIT + file LICENSE
+Depends:
+    R(>= 3.6)
+Imports:
+    SummarizedExperiment,
+    gss,
+    plyr,
+    zoo,
+    pracma,
+    ggplot2,
+    BiocParallel,
+    parallel,
+    grDevices,
+    graphics,
+    stats,
+    utils,
+    methods,
+    BiocGenerics
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat,
+    devtools,
+    BiocManager
+biocViews:
+    TimeCourse,
+    Survival,
+    Microbiome,
+    Metabolomics,
+    Proteomics,
+    Lipidomics,
+    Transcriptomics,
+    Regression
+NeedsCompilation: no
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
